@@ -11,6 +11,8 @@ set -x
 curl -4s --max-time 90 --retry-delay 3 --retry 5 https://raw.githubusercontent.com/antonme/ipnames/master/resolve-youtube.txt | grep -i [0-9]. > /tmp/youtube-ipv4.txt || echo 'failed'
 curl -4s --max-time 90 --retry-delay 3 --retry 5 https://raw.githubusercontent.com/antonme/ipnames/master/ext-resolve-youtube.txt | grep -i [0-9]. >> /tmp/youtube-ipv4.txt || echo 'failed'
 
+dig -f youtube/domain.txt A +short >> youtube/ipv4.txt || echo "YouTube:failed"
+
 # save ipv6
 # grep ':' youtube/nets.txt > /tmp/youtube-ipv6.txt
 
