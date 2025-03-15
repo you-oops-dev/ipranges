@@ -11,6 +11,7 @@ set -x
 curl -4s --max-time 90 --retry-delay 3 --retry 5 https://raw.githubusercontent.com/antonme/ipnames/refs/heads/master/resolve-youtube.txt | grep -i [0-9]. > /tmp/youtube-ipv4.txt || echo 'failed'
 curl -4s --max-time 90 --retry-delay 3 --retry 5 https://raw.githubusercontent.com/antonme/ipnames/refs/heads/master/ext-resolve-youtube.txt | grep -i [0-9]. >> /tmp/youtube-ipv4.txt || echo 'failed'
 curl -4s --max-time 90 --retry-delay 3 --retry 5 https://raw.githubusercontent.com/antonme/ipnames/refs/heads/master/dns-youtube.txt >> youtube/domain.txt || echo "YouTube: Getting domain failed"
+curl -4s --max-time 90 --retry-delay 3 --retry 5 https://raw.githubusercontent.com/bol-van/zapret-win-bundle/refs/heads/master/zapret-winws/files/list-youtube.txt >> youtube/domain.txt || echo "YouTube: Getting domain 2 failed"
 # Both Record (IPv4/IPv6)
 #cat youtube/domain.txt | utils/mdig-bolvan --threads=$(nproc) >> /tmp/youtube-ipv4.txt
 # A-Record (IPv4)

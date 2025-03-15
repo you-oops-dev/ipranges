@@ -511,6 +511,7 @@ canary.discord.com
 cdn.discordapp.com
 discord-activities.com
 discordactivities.com
+discord.app
 discordapp.com
 discordapp.io
 discordapp.net
@@ -532,6 +533,7 @@ discordpartygames.com
 discordsays.com
 discordsez.com
 discord-staging.storage.googleapis.com
+discord.status
 discordstatus.com
 discord.storage.googleapis.com
 discord.store
