@@ -11,7 +11,7 @@ cat arch/domains.txt | utils/mdig-bolvan --family=6 --threads=$(nproc) | grep ":
 grep -v ':' /tmp/arch.txt > /tmp/arch-ipv4.txt
 
 # save ipv6
-grep ':' /tmp/arch.txt > /tmp/spotify-ipv6.txt
+grep ':' /tmp/arch.txt > /tmp/arch-ipv6.txt
 
 # sort & uniq
 sort -t. -k1,1n -k2,2n -k3,3n -k4,4n -h /tmp/arch-ipv4.txt | uniq > arch/ipv4.txt
