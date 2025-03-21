@@ -181,3 +181,34 @@ jobs:
           commit_user_name: github-actions[bot]
           commit_user_email: github-actions[bot]@users.noreply.github.com
           commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+
+      - name: Create special list version
+        env:
+            LANG: en_US.UTF-8
+            CHARSET: UTF-8
+            NAME_ACCOUNT_GITHUB: you-oops-dev
+            THRESHOLDv4: 1/4
+            IP2NET_PREFIX_LENGTH: 16-26
+        run: |
+            set -euo pipefail
+            set -x
+            find . -name downloader-all.sh| sort -h | awk '{print "Executing "$1"...";system("bash "$1)}'
+
+      - name: Protection against empty files (multiple sheets in a single sheet that is compressed). If one such file is found, no changes will be committed to the repository. Finishing with code 1. Error code for the repository author.
+        env:
+            LANG: en_US.UTF-8
+            CHARSET: UTF-8
+        run: |
+              for filename in $(find . -type f -name "ipv4_smart.txt" -print | sort -t . | uniq); do if [[ -s ${filename} ]]; then echo "No empty $filename";else echo -e "\e[1;33mEmpty\033[0m $filename" && export EMPTY=1; fi; done
+              if [[ $EMPTY == 1 ]]; then exit 1; else echo "OK!"; fi
+
+      - name: Commit files multiple smart list
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+                commit_message: "Auto-update IPs multiple smart list"
+                file_pattern: '*/*smart.txt */*/*smart.txt */*_merged.txt */*/*_merged.txt'
+                commit_options: "--no-verify"
+                repository: .
+                commit_user_name: github-actions[bot]
+                commit_user_email: github-actions[bot]@users.noreply.github.com
+                commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
