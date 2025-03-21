@@ -16,6 +16,7 @@ sort -t. -k1,1n -k2,2n -k3,3n -k4,4n ${name_dir}/ipv4.txt | uniq | sponge ${name
 # usage Mat1RX
 python utils/merge_Mat1RX.py -c 1000000 --source=${name_dir}/ipv4.txt | sort -h > ${name_dir}/ipv4_merged.txt
 # usage ip2net
-utils/ip2net --v4-threshold=${THRESHOLDv4} --prefix-length=${IP2NET_PREFIX_LENGTH} | sort -h > ${name_dir}/ipv4_smart.txt
+cat ${name_dir}/ipv4.txt | utils/ip2net-static --v4-threshold=${THRESHOLDv4} --prefix-length=${IP2NET_PREFIX_LENGTH} | sort -h > ${name_dir}/ipv4_smart.txt
 
+# clean unmerged list
 rm -f ${name_dir}/ipv4.txt;
