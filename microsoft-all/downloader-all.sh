@@ -3,7 +3,7 @@
 set -euo pipefail
 set -x
 
-name_dir=yandex-all
+name_dir=microsoft-all
 
 # get Microsoft and Azure list unmerged
 name_list1=microsoft
