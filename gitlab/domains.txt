@@ -3,7 +3,9 @@ gitlab.io
 gitlab.net
 gitlab-static.net
 gitlab-assets.oss-cn-hongkong.aliyuncs.com
-amd.com
-amd.com.cn
-amdfanstore.com
-radeon.com
+gitlab-assets.oss-cn-hongkong.aliyuncs.com
+gitlab-static.net
+gitlab.com
+gitlab.net
+gitter-static.net
+gitter.im
