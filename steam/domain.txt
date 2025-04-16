@@ -22,10 +22,10 @@ cache6-fra2.steamcontent.com
 cdn.akamai.steamstatic.com
 cdn.fastly.steamstatic.com
 cdn.steamstatic.com
-client-update.fastly.steamstatic.com
 clan.fastly.steamstatic.com
 clan.steamstatic.com
 clientconfig.akamai.steamstatic.com
+client-update.fastly.steamstatic.com
 cmp1-ams1.steamserver.net
 cmp1-fra1.steamserver.net
 cmp1-fra2.steamserver.net
@@ -35,6 +35,7 @@ cmp1-lax1.steamserver.net
 cmp1-sea1.steamserver.net
 cmp1-sgp1.steamserver.net
 cmp1-vie1.steamserver.net
+cmp1-waw1.steamserver.net
 cmp2-ams1.steamserver.net
 cmp2-atl3.steamserver.net
 cmp2-dfw1.steamserver.net
@@ -46,6 +47,8 @@ cmp2-lhr1.steamserver.net
 cmp2-ord1.steamserver.net
 cmp2-sea1.steamserver.net
 cmp2-sgp1.steamserver.net
+cmp2-sto1.steamserver.net
+cmp2-waw1.steamserver.net
 cmp3-hkg1.steamserver.net
 community.akamai.steamstatic.com
 community.cloudflare.steamstatic.com
@@ -92,14 +95,15 @@ steamcdn-a.akamaihd.net
 steam-chat.com
 steamcloud-eu-ams.storage.googleapis.com
 steamcloud-eu-fra.storage.googleapis.com
-steamcommunity-a.akamaihd.net
 steamcommunity.com
+steamcommunity-a.akamaihd.net
 steammobile.akamaized.net
 steamuserimages-a.akamaihd.net
 store.akamai.steamstatic.com
+store.fastly.steamstatic.com
 store.steampowered.com
 store.steamstatic.com
 support.steampowered.com
-test.steampowered.com
 t.sni.global.fastly.net
+test.steampowered.com
 udp.ipv6check.akadns.net
