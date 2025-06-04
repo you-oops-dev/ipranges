@@ -16,7 +16,9 @@ get_routes() {
 
 
 python utils/arin-org.py SKYCA-3 >> /tmp/fastly.txt
-curl -4s --max-time 90 --retry-delay 3 --retry 5 https://api.fastly.com/public-ip-list| jq -r '.addresses[], .ipv6_addresses[]' >> /tmp/fastly.txt
+curl -4s --max-time 90 --retry-delay 3 --retry 5 https://api.fastly.com/public-ip-list| jq -r '.addresses[], .ipv6_addresses[]' >> /tmp/fastly.txt || echo 'failed'
+get_routes 'AS54113' >> /tmp/fastly.txt || echo 'failed'
+get_routes 'AS895' >> /tmp/fastly.txt || echo 'failed'
 
 # save ipv4
 grep -v ':' /tmp/fastly.txt > /tmp/fastly-ipv4.txt
