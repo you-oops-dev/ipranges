@@ -1,13 +1,6 @@
 1k4dacprodeus2file4.blob.core.windows.net
 4qfyacprodeus2file2.blob.core.windows.net
 95s5acprodeus1file6.blob.core.windows.net
-acghubeus0.actions.githubusercontent.com
-acghubeus1.actions.githubusercontent.com
-acghubeus2.actions.githubusercontent.com
-acproxeau1.actions.githubusercontent.com
-acproxneu1.actions.githubusercontent.com
-acproxsdc1.actions.githubusercontent.com
-acproxwus31.actions.githubusercontent.com
 api.github.com
 aw97acprodeus1file2.blob.core.windows.net
 broker.actions.githubusercontent.com
@@ -94,6 +87,8 @@ pipelinesghubeus6.actions.githubusercontent.com
 pipelinesghubeus7.actions.githubusercontent.com
 pipelinesghubeus8.actions.githubusercontent.com
 pipelinesghubeus9.actions.githubusercontent.com
+pipelinesproxcnc1.actions.githubusercontent.com
+pipelinesproxcus1.actions.githubusercontent.com
 pipelinesproxeau1.actions.githubusercontent.com
 pipelinesproxsdc1.actions.githubusercontent.com
 pipelinesproxweu1.actions.githubusercontent.com
@@ -132,6 +127,8 @@ runnerghubeus1.actions.githubusercontent.com
 runnerghubeus20.actions.githubusercontent.com
 runnerghubeus21.actions.githubusercontent.com
 runnerghubwus31.actions.githubusercontent.com
+runnerproxcnc1.actions.githubusercontent.com
+runnerproxcus1.actions.githubusercontent.com
 runnerproxeau1.actions.githubusercontent.com
 runnerproxsdc1.actions.githubusercontent.com
 runnerproxweu1.actions.githubusercontent.com
