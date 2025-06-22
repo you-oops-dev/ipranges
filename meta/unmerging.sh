@@ -9,7 +9,7 @@ curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubuserconte
 curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/$NAME_ACCOUNT_GITHUB/ipranges/main/"$1"/ipv6.txt >> /tmp/"$1".txt
 }
 
-name_list=facebook
+name_list=meta
 
 get_prefix "$name_list" || echo 'failed'
 
