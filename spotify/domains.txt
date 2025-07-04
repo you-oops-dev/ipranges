@@ -1,4 +1,3 @@
-
 accounts.scdn.co
 accounts.spotify.com
 adanalytics.spotify.com
