@@ -104,6 +104,7 @@ productionresultssa7.blob.core.windows.net
 productionresultssa8.blob.core.windows.net
 productionresultssa9.blob.core.windows.net
 pypi.pkg.github.com
+release-assets.githubusercontent.com
 results-receiver.actions.githubusercontent.com
 rubygems.pkg.github.com
 rubygemsregistryv2prod.blob.core.windows.net
