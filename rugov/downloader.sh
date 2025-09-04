@@ -36,6 +36,8 @@ get_maintained 'FSS-MNT' >> /tmp/rugov.txt || echo 'failed'
 get_maintained 'RUWEB-MNT-RIPE' >> /tmp/rugov.txt || echo 'failed'
 #digital
 get_maintained 'SERVICEPIPE-MNT' >> /tmp/rugov.txt || echo 'failed'
+#ATS Smolnogo WiFI AP "SPB_FREE"
+get_maintained 'ru-atss' >> /tmp/rugov.txt || echo 'failed'
 
 #mos
 get_routes AS62268 >> /tmp/rugov.txt || echo 'failed'
