@@ -33,9 +33,8 @@ returnyoutubedislikeapi.com
 music.youtube.com" >> youtube/domain.txt
 dos2unix youtube/domain.txt
 sort youtube/domain.txt | uniq | sponge youtube/domain.txt
-cat youtube/domain.txt | grep -vEe '(.googlevideo.com|.youtube.com|.ytimg.com|.google.com|.withgoogle.com|.googleusercontent.com|.metric.gstatic.com|.googleapis.com|.ggpht.com)$' > youtube/domain_prepare.txt
-sort -h youtube/domain_prepare.txt | uniq | sed '/kellykawase/d' | sed '/hatenablog.co/d' | sed '/blogspot/d' | sed '/githubusercontent/d' | sed '/appspot/d' | sed '/kilatiron/d' | sed '/.ru$/d' | sed '/.co$/d' | sed '/.download$/d' | sed '/.yolasite.com$/d' | sed '/.youtube$/d' | sed '/.info$/d' | sed '/.me$/d' | sed '/.be$/d' | sed '/.net$/d' | sed '/.io$/d' | sed '/.ua$/d' | sed '/.cn$/d' | sort | sponge youtube/domain_prepare.txt
-sed -i 's/^www.//g' youtube/domain_prepare.txt
+cat youtube/domain.txt | grep -vEe '(.youtube.com|.ytimg.com|.google.com|.withgoogle.com|.googleusercontent.com|.metric.gstatic.com|.googleapis.com|.ggpht.com)$' > youtube/domain_prepare.txt
+sort -h youtube/domain_prepare.txt | uniq | sed '/wwww/d' | sed '/kellykawase/d' | sed '/lscache/d' | sed '/preferred/d' | sed '/video.google.com/d' | sed '/hatenablog.co/d' | sed '/blogspot/d' | sed '/githubusercontent/d' | sed '/appspot/d' | sed '/kilatiron/d' | sed '/.ru$/d' | sed '/.co$/d' | sed '/.download$/d' | sed '/.yolasite.com$/d' | sed '/.youtube$/d' | sed '/.info$/d' | sed '/.me$/d' | sed '/.be$/d' | sed '/.net$/d' | sed '/.io$/d' | sed '/.ua$/d' | sed '/.cn$/d' | sort | sponge youtube/domain_prepare.txt
 sort -h youtube/domain_prepare.txt | uniq | sponge youtube/domain_prepare.txt
 
 mv -f youtube/domain_prepare.txt youtube/domain.txt
