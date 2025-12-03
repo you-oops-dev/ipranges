@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -euo pipefail
-set -x
+#set -euo pipefail
+#set -x
 
 
 # get from mnt
