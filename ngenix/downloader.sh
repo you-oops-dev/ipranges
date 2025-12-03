@@ -22,8 +22,8 @@ get_routes() {
     whois -h whois.bgp.net.br -- "-i origin $1" | rg '^route' | awk '{ print $2; }'
 }
 
-get_maintained 'CCT-MNT' > /tmp/ngenix.txt || echo 'failed'
-get_routes 'AS57363' >> /tmp/ngenix.txt || echo 'failed'
+get_maintained 'CCT-MNT' | sed '/-/d' > /tmp/ngenix.txt || echo 'failed'
+get_routes 'AS57363' | sed '/-/d' >> /tmp/ngenix.txt || echo 'failed'
 
 # save ipv4
 grep -v ':' /tmp/ngenix.txt | grep -v "0.0.0.0" > /tmp/ngenix-ipv4.txt
