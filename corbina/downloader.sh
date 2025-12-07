@@ -19,6 +19,9 @@ get_maintained 'RU-CORBINA-MNT' > /tmp/corbina.txt || echo 'failed'
 # save ipv4
 grep -v ':' /tmp/corbina.txt | grep "/" > /tmp/corbina-ipv4.txt
 
+# save ipv6
+grep ':' /tmp/corbina.txt > /tmp/corbina-ipv6.txt
 
 # sort & uniq
 sort -h /tmp/corbina-ipv4.txt | uniq > corbina/ipv4.txt
+sort -h /tmp/corbina-ipv6.txt | uniq > corbina/ipv6.txt
