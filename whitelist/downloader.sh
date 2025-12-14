@@ -15,6 +15,6 @@ curl -H "User-Agent: $UA" --max-time 30 --retry-delay 3 --retry 10 -4s ${URL} | 
 
 zstdcat whitelist/ipv4.txt.zst > whitelist/ipv4.txt
 
-python utils/merge_Mat1RX.py -c 1000000 --source=whitelist/ipv4.txt > whitelist/ipv4_merged.txt && rm -f  whitelist/ipv4.txt
+python utils/merge_Mat1RX.py -c 1000000 --source=whitelist/ipv4.txt > whitelist/ipv4_merged.txt && rm -f whitelist/ipv4.txt whitelist/ipv4.txt.zst
 
 
