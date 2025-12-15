@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+set -x
 
 export NICKNAME=hxehex
 export REPO_NAME=russia-mobile-internet-whitelist
