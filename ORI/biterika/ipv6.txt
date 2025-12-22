@@ -4,6 +4,7 @@
 2a07:f9c0:babe::/48
 2a07:f9c0:cafe::/48
 2a07:f9c0:face::/48
+2a07:f9c0:fefe::/48
 2a07:f9c1::/32
 2a07:f9c1:babe::/48
 2a07:f9c1:cafe::/48
