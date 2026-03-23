@@ -108,3 +108,4 @@ support.steampowered.com
 t.sni.global.fastly.net
 test.steampowered.com
 udp.ipv6check.akadns.net
+steamserver.net
