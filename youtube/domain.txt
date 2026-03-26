@@ -10186,6 +10186,8 @@ rr5---sn-aigzrnz7.googlevideo.com
 rr5.sn-aigzrnze.googlevideo.com
 rr5---sn-aigzrnze.googlevideo.com
 rr5---sn-aj4g55-5v.googlevideo.com
+rr5.sn-aj5go5-53.googlevideo.com
+rr5---sn-aj5go5-53.googlevideo.com
 rr5.sn-ajab55-55.googlevideo.com
 rr5---sn-ajab55-55.googlevideo.com
 rr5.sn-apn7en7s.googlevideo.com
@@ -10296,6 +10298,8 @@ rr5.sn-h5qzen76.googlevideo.com
 rr5---sn-h5qzen76.googlevideo.com
 rr5---sn-h5qzen7d.googlevideo.com
 rr5---sn-h5qzen7s.googlevideo.com
+rr5.sn-hgn7rn7k.googlevideo.com
+rr5---sn-hgn7rn7k.googlevideo.com
 rr5---sn-hgn7rnee.googlevideo.com
 rr5---sn-hgn7rnll.googlevideo.com
 rr5---sn-hgn7rnls.googlevideo.com
