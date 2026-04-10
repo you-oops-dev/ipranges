@@ -10,6 +10,10 @@ ghcr.io
 github.com
 github-registry-files.githubusercontent.com
 github-releases.githubusercontent.com
+hosted-compute-request-orchestrator-prod-eus-01.githubapp.com
+hosted-compute-request-orchestrator-prod-eus-02.githubapp.com
+hosted-compute-request-orchestrator-prod-iad-01.githubapp.com
+hosted-compute-request-orchestrator-prod-iad-02.githubapp.com
 launch.actions.githubusercontent.com
 maven.pkg.github.com
 mavenregistryv2prod.blob.core.windows.net
