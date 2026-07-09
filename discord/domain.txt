@@ -1,4 +1,3 @@
-429:TooManyRequests
 96discord-attachments-uploads-prd.storage.googleapis.com
 atlanta1068.discord.gg
 atlanta1212.discord.gg
@@ -680,7 +679,6 @@ finland10130.discord.gg
 finland10131.discord.gg
 finland10132.discord.gg
 finland10133.discord.gg
-FormoreonscrapingGitHubandhowitmayaffectyourrights,pleasereviewourTermsofService(https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).singapore11000.discord.gg
 frankfurt10000.discord.gg
 frankfurt10001.discord.gg
 frankfurt10002.discord.gg
