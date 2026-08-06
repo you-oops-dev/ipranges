@@ -11,7 +11,7 @@ curl -4s --max-time 90 --retry-delay 3 --retry 5 https://api.github.com/meta > /
 
 
 # get all prefixes without some keys
-jq 'del(.["ssh_keys", "verifiable_password_authentication", "ssh_key_fingerprints", "actions", "domains"]) | .[] | .[]' -r /tmp/github.json > /tmp/github-all.txt
+jq 'del(.["ssh_keys", "verifiable_password_authentication", "ssh_key_fingerprints", "actions", "domains", "commit_signing_keys"]) | .[] | .[]' -r /tmp/github.json > /tmp/github-all.txt
 
 # get all domain's
 cat /tmp/github.json | jq | grep -iEe "(\.com|\.io|\.net|\.org)" | sed '/*/d' | sed 's/"//g' | sed 's/,//g' | sed 's/ //g' | sort | uniq > github/domains.txt
