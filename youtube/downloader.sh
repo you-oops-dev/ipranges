@@ -8,10 +8,8 @@ set -x
 #grep -v ':' youtube/nets.txt > /tmp/youtube-ipv4.txt
 curl -4s --max-time 90 --retry-delay 3 --retry 10 https://raw.githubusercontent.com/antonme/ipnames/refs/heads/master/resolve-youtube.txt | grep -i [0-9]. > /tmp/youtube-ipv4.txt || echo 'failed'
 curl -4s --max-time 90 --retry-delay 3 --retry 10 https://raw.githubusercontent.com/antonme/ipnames/refs/heads/master/ext-resolve-youtube.txt | grep -i [0-9]. >> /tmp/youtube-ipv4.txt || echo 'failed'
-curl -4s --max-time 90 --retry-delay 3 --retry 10 https://raw.githubusercontent.com/antonme/ipnames/refs/heads/master/dns-youtube.txt > youtube/domain.txt || echo "YouTube: Getting domain failed"
-curl -4s --max-time 90 --retry-delay 3 --retry 10 https://raw.githubusercontent.com/bol-van/zapret-win-bundle/refs/heads/master/zapret-winws/files/list-youtube.txt >> youtube/domain.txt || echo "YouTube: Getting domain 2 failed"
-curl -4s --max-time 90 --retry-delay 3 --retry 10 https://raw.githubusercontent.com/antonme/ipnames/master/ext-dns-youtube.txt >> youtube/domain.txt || echo "YouTube: Getting domain 3 failed"
-curl -4s --max-time 90 --retry-delay 3 --retry 10 https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/youtube.lst >> youtube/domain.txt || echo "YouTube: Getting domain 4 failed source itdoginfo"
+curl -4s --max-time 90 --retry-delay 3 --retry 10 https://raw.githubusercontent.com/bol-van/zapret-win-bundle/refs/heads/master/zapret-winws/files/list-youtube.txt > youtube/domain.txt || echo "YouTube: Getting domain 1 failed"
+curl -4s --max-time 90 --retry-delay 3 --retry 10 https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Services/youtube.lst >> youtube/domain.txt || echo "YouTube: Getting domain 2 failed source itdoginfo"
 
 
 echo "img.youtube.com
