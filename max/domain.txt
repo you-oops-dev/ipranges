@@ -1,0 +1,7 @@
+calls.okcdn.ru
+i.oneme.ru
+max.ru
+oneme.ru
+st.max.ru
+web.max.ru
+ws-api.oneme.ru
