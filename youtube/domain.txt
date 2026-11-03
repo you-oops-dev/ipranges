@@ -3,12 +3,12 @@ googleapis.com
 googleusercontent.com
 googlevideo.com
 gstatic.com
-returnyoutubedislikeapi.com
 returnyoutubedislike.com
+returnyoutubedislikeapi.com
 sponsor.ajay.app
 sponsorblock.hankmccord.dev
+youtube-nocookie.com
 youtube.com
 youtubekids.com
-youtube-nocookie.com
 ytimg.com
 yting.com
