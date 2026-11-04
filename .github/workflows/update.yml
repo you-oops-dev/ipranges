@@ -137,7 +137,7 @@ jobs:
       - name: Delete temp files in tmp directory and delete all archives in repository
         run: |
           set -euo pipefail
-          find /tmp/ -maxdepth 1 -type f -name "*.txt" -delete && find . -type f -name "*.txt.zst" -delete
+          sudo find /tmp/ -maxdepth 1 -type f -name "*.txt" -delete && sudo find . -type f -name "*.txt.zst" -delete
 
       - name: Downloading iprange and unmerge ipranges
         env:
